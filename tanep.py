@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 import os
-Username = os.environ.get('wenason1')
-Password = os.environ.get('Tarime6853')
+Username = os.environ.get('your username')
+Password = os.environ.get('your password')
 
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
@@ -22,9 +22,9 @@ driver.get(url)
 time.sleep(3)
 
 username_input = driver.find_element(by=By.ID, value="Username")
-username_input.send_keys("wenason1")
+username_input.send_keys("your username")
 
 password_input = driver.find_element(by=By.ID, value="Password")
-password_input.send_keys("Tarime6853")
+password_input.send_keys("Your password")
 
 password_input.send_keys(Keys.ENTER)
